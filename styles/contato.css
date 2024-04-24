@@ -1,0 +1,57 @@
+.Contato{
+    background: var(--cor-de-fundocabecalho);
+    color: var(--azul-fonte);
+ 
+    padding: 2.5em 2em;
+}
+.contato__titulo{
+    font-family: var( --font-principal);
+    font-weight: 500;
+    font-size: 18px;
+}
+.contato__texto{ 
+    
+    font-family: var(--font-principal);
+    font-weight: 300;
+    font-size: 16px;
+    margin: 1em 0;
+}
+.contato__pesquisa{
+    background-color: transparent;
+    border: 1px solid var(--azul-fonte); 
+    color:var(--azul-fonte) ;
+    border-radius: 24px;
+    padding: 1em;
+    width: 100%;
+}
+
+.contato__pesquisa::placeholder{
+    font-family: var(--font-principal);
+    font-size: 14px ;
+    font-weight: 400;
+    color: var(--azul-fonte);
+    text-align: center;
+    background: url("../imagens/Email.svg")no-repeat;
+
+}@media screen and (min-width:1024px){
+    .Contato{
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+    }
+    .contato__pesquisa{
+        width: 30%;
+    }
+    .contato__descrição{
+        margin-right:  1em;
+        width: 30%;
+    }
+    .contato__titulo{
+       font-size: 24px; 
+    }
+}
+@media screen and (min-width: 1728px){
+    .Contato{
+        padding: 3em 20vw;
+    }
+}

@@ -1,0 +1,80 @@
+@import url("styles/header.css");
+@import url(styles/banner.css);
+@import url("styles/carrosel.css");
+@import url(styles/topicos.css);
+@import url(styles/contato.css);
+
+:root{
+    --cor-de-fundo: #EBECEE;
+    --cor-de-fundocabecalho:#ffffff;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --font-principal:"Poppins";
+    --azul-fonte: #002F52;
+    --cinza:gray;
+    --preto:black;
+
+   
+    
+}
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+hr{
+    margin: 0;
+}
+.rodape{
+    background-color: var(--cor-de-fundocabecalho);
+    padding: 1em;
+    text-align: center;
+}
+.rodape__titulo{
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--azul-fonte);
+}
+.lista-rodape{
+    display: none;
+}
+@media screen and (min-width:1024px){
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+    } 
+    .lista-rodape{
+        display: block;
+    }
+    .lista-rodape__item{
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+    .lista-rodape__link{
+        color:  var(--cinza);
+        text-decoration: none;
+        margin-left: 0.6em  ;
+        
+    }
+    .ista-rodape__titulo{
+        font-size: 14px;
+        color: var(--cinza);
+    }
+    .rodape__titulo{
+        font-size: 24px;
+    }
+
+}
+@media screen and (min-width: 1728px){
+    .lista-rodape{
+        border-left: 1px solid var(--cinza) ;
+        padding-left: 1em;
+    }
+    .rodape{
+        padding: 3em 0;
+    }
+}
+
